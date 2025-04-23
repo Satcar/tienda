@@ -1,0 +1,34 @@
+body {
+    background-color: rgba(255, 209, 172, 0.85);
+    padding: 2rem;
+}
+
+h1 {
+    color: darkred;
+    text-shadow: 2px 2px 2px white;
+}
+
+input, select, textarea {
+    margin: 0.5rem;
+    padding: 0.4rem;
+    border: 2px solid #cc6600;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+input:focus, select:focus, textarea:focus {
+    background-color: #fffbea;
+}
+
+input#submit:hover {
+    background-color: #ffdd99;
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Pizza</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <h1>Haz tu pedido</h1><hr>
+
+    <div class="box">
+        <form action="recibido.html" method="get" name="pedidoPizza">
+
+            <select name="tratamiento" id="tratamiento">
+                <option value="Sr.">Sr.</option>
+                <option value="Sra.">Sra.</option>
+            </select>
+
+            <input type="text" name="nombre" placeholder="Tu nombre" required><br>
+
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="612 345 678" required><br>
+
+            <label for="pizza">Tipo de pizza</label>
+            <select name="pizza" id="pizza" required>
+                <option value="margarita">Margarita</option>
+                <option value="pepperoni">Pepperoni</option>
+                <option value="barbacoa">Barbacoa</option>
+                <option value="cuatro quesos">Cuatro quesos</option>
+                <option value="carbonara">Carbonara</option>
+                <option value="atun">Atun</option>
+            </select><br>
+
+            <label>Ingredientes extras:</label><br>
+            <input type="checkbox" name="toppingsAdicionales" value="Queso extra"> Queso extra<br>
+            <input type="checkbox" name="toppingsAdicionales" value="Aceitunas"> Aceitunas<br>
+            <input type="checkbox" name="toppingsAdicionales" value="Champiñones"> Champiñones<br>
+            <input type="checkbox" name="toppingsAdicionales" value="Anchoas"> Anchoas<br>
+
+            <label>Como quieres recibir tu pedido?</label><br>
+            <input type="radio" name="envio" value="casa" required> Enviar a casa<br>
+            <input type="radio" name="envio" value="recoger"> Venir a buscar<br>
+
+            <label for="comentario">Comentarios</label><br>
+            <textarea id="comentario" name="comentario" maxlength="150" placeholder="Informacion adiciional..."></textarea><br>
+
+            <input type="submit" value="Enviar pedido" id="submit"><br>
+
+        </form>
+    </div>
+
+</body>
+</html>
